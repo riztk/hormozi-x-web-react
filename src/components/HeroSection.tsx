@@ -40,8 +40,8 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="mb-5 sm:mb-6 text-[38px] sm:text-[62px] lg:text-[72px] font-medium tracking-[-0.035em] text-ink leading-[1.06]"
         >
-          What if leads kept coming <br />
-          <span className="font-semibold">without hiring more?</span>
+          Stop hiring SDRs. <br />
+          <span className="font-semibold">Start building pipeline.</span>
         </motion.h1>
 
         <motion.p
@@ -50,9 +50,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.08 }}
           className="mx-auto mb-8 sm:mb-10 max-w-2xl text-[17px] sm:text-[20px] font-normal leading-relaxed text-ink-muted"
         >
-          Describe your ideal customer.{" "}
-          <strong className="text-ink font-semibold">Hormozi X</strong> handles
-          the research, outreach, and booking — automatically.
+          Replace 4-month SDR ramp times with instant, evidence-grounded AI outreach that handles replies and books qualified meetings.
         </motion.p>
 
         <motion.div
@@ -90,7 +88,7 @@ export function HeroSection() {
                 <Check className="h-4 w-4" /> You're on the priority waitlist!
               </div>
               <p className="text-xs text-ink-muted mt-1">
-                Reserved for <strong>{email}</strong>. We'll be in touch soon.
+                Reserved for <strong>{email}</strong>. We're rolling out access in batches.
               </p>
             </div>
           )}
@@ -98,12 +96,12 @@ export function HeroSection() {
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-[11px] sm:text-[12px] font-mono text-ink-subtle">
             <span className="flex items-center gap-1">
               <Check className="h-3.5 w-3.5 text-semantic-success" />
-              Up and running in minutes
+              $38 per qualified meeting
             </span>
             <span className="text-hairline hidden sm:inline">•</span>
             <span className="flex items-center gap-1">
               <Check className="h-3.5 w-3.5 text-semantic-success" />
-              No hiring or ramp time
+              Zero hiring or ramp time
             </span>
             <span className="text-hairline hidden sm:inline">•</span>
             <span className="flex items-center gap-1">

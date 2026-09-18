@@ -31,18 +31,21 @@ export function Footer() {
               Product
             </h4>
             <div className="flex flex-col gap-2.5 text-[13px] font-medium text-ink-muted">
-              <Link
-                to="/#how-it-works"
+              <a
+                href="/#pipeline"
                 className="hover:text-ink transition-colors"
               >
-                How it works
-              </Link>
-              <Link to="/#agents" className="hover:text-ink transition-colors">
-                Architecture
-              </Link>
-              <Link to="/#pricing" className="hover:text-ink transition-colors">
-                Pricing
-              </Link>
+                Pipeline Workflow
+              </a>
+              <a href="/#evidence" className="hover:text-ink transition-colors">
+                Deliverability
+              </a>
+              <a href="/#autonomy" className="hover:text-ink transition-colors">
+                Graduated Autonomy
+              </a>
+              <a href="/#enterprise-trust" className="hover:text-ink transition-colors">
+                Enterprise Trust
+              </a>
             </div>
           </div>
 
@@ -60,12 +63,12 @@ export function Footer() {
               <Link to="/terms" className="hover:text-ink transition-colors">
                 Terms of Service
               </Link>
-              <Link
-                to="/#governance"
+              <a
+                href="/#enterprise-trust"
                 className="hover:text-ink transition-colors"
               >
                 Security
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -80,14 +83,14 @@ export function Footer() {
               >
                 Contact Us
               </a>
-              <Link
-                to="/#waitlist"
+              <a
+                href="/#waitlist"
                 className="inline-flex items-center gap-1.5 font-semibold text-ai-orange hover:underline transition-colors mt-1"
               >
                 <Sparkles className="h-3 w-3" />
                 <span>Waitlist</span>
                 <ArrowRight className="h-3 w-3" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

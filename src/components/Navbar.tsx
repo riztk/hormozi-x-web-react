@@ -14,9 +14,10 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "Architecture", href: "#agents" },
-    { label: "How it works", href: "#how-it-works" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "How it works", href: "/#pipeline" },
+    { label: "Deliverability", href: "/#evidence" },
+    { label: "Autonomy", href: "/#autonomy" },
+    { label: "Trust", href: "/#enterprise-trust" },
   ];
 
   return (
@@ -60,7 +61,7 @@ export function Navbar() {
             asChild
             className="h-9 cursor-pointer rounded-md border border-ink bg-ink px-4 text-[14px] font-medium text-white shadow-xs transition-all hover:bg-ink/90 active:bg-ink"
           >
-            <a href="#waitlist" className="flex items-center gap-2">
+            <a href="/#waitlist" className="flex items-center gap-2">
               <Sparkles className="h-3.5 w-3.5 text-ai-orange" />
               <span>Join the Waitlist</span>
             </a>
@@ -73,7 +74,7 @@ export function Navbar() {
             size="sm"
             className="h-8 cursor-pointer rounded-md bg-ink px-3 text-[13px] font-medium text-white shadow-xs hover:bg-ink/90"
           >
-            <a href="#waitlist" className="flex items-center gap-1.5">
+            <a href="/#waitlist" className="flex items-center gap-1.5">
               <Sparkles className="h-3 w-3 text-ai-orange" />
               <span>Waitlist</span>
             </a>
@@ -136,7 +137,7 @@ export function Navbar() {
                   className="h-11 w-full min-h-[44px] cursor-pointer rounded-lg bg-ink text-sm font-medium text-white hover:bg-ink/90"
                 >
                   <a
-                    href="#waitlist"
+                    href="/#waitlist"
                     onClick={() => setIsOpen(false)}
                     className="flex items-center justify-center gap-2"
                   >
