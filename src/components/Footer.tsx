@@ -6,16 +6,13 @@ export function Footer() {
     <footer className="border-t border-hairline bg-surface-card pt-16 pb-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-hairline">
-          <div className="md:col-span-6 space-y-4 max-w-md">
+          <div className="md:col-span-5 space-y-4 max-w-md">
             <Link to="/" className="flex items-center gap-2.5 w-fit">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg border border-hairline bg-canvas text-ink shadow-2xs">
                 <span className="font-mono text-xs font-bold">HX</span>
               </div>
               <span className="text-base font-semibold tracking-tight text-ink">
                 Hormozi<span className="font-bold text-ink">X</span>
-              </span>
-              <span className="rounded-full bg-semantic-success/10 border border-semantic-success/30 px-2 py-0.5 text-[10px] font-mono font-semibold text-semantic-success">
-                Runtime Active
               </span>
             </Link>
 
@@ -55,24 +52,39 @@ export function Footer() {
             </h4>
             <div className="flex flex-col gap-2.5 text-[13px] font-medium text-ink-muted">
               <Link
-                to="/privacy-policy"
+                to="/legal/privacy"
                 className="hover:text-ink transition-colors"
               >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="hover:text-ink transition-colors">
-                Terms of Service
-              </Link>
-              <a
-                href="/#enterprise-trust"
+              <Link
+                to="/legal/terms"
                 className="hover:text-ink transition-colors"
               >
-                Security
-              </a>
+                Terms of Service
+              </Link>
+              <Link
+                to="/legal/dpa"
+                className="hover:text-ink transition-colors"
+              >
+                DPA
+              </Link>
+              <Link
+                to="/legal/subprocessors"
+                className="hover:text-ink transition-colors"
+              >
+                Sub-processors
+              </Link>
+              <Link
+                to="/legal/acceptable-use"
+                className="hover:text-ink transition-colors"
+              >
+                Acceptable Use
+              </Link>
             </div>
           </div>
 
-          <div className="md:col-span-2 space-y-3">
+          <div className="md:col-span-3 space-y-3">
             <h4 className="text-[11px] font-mono font-bold uppercase tracking-widest text-ink-subtle">
               Connect
             </h4>
@@ -83,14 +95,14 @@ export function Footer() {
               >
                 Contact Us
               </a>
-              <a
-                href="/#waitlist"
+              <Link
+                to="/demo"
                 className="inline-flex items-center gap-1.5 font-semibold text-ai-orange hover:underline transition-colors mt-1"
               >
                 <Sparkles className="h-3 w-3" />
-                <span>Waitlist</span>
+                <span>Book a Demo</span>
                 <ArrowRight className="h-3 w-3" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

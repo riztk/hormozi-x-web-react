@@ -1,21 +1,12 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Sparkles, ArrowRight, ArrowDown, Check } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 export function HeroSection() {
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email.trim().length > 3) setIsSubmitted(true);
-  };
-
   return (
     <section
-      id="waitlist"
+      id="hero"
       className="relative flex min-h-[calc(100vh-4rem)] w-full flex-col items-center justify-center overflow-hidden bg-surface-card px-4 py-20 sm:px-6 lg:px-8 font-sans selection:bg-ai-orange selection:text-white"
     >
       <div
@@ -50,7 +41,8 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.08 }}
           className="mx-auto mb-8 sm:mb-10 max-w-2xl text-[17px] sm:text-[20px] font-normal leading-relaxed text-ink-muted"
         >
-          Replace 4-month SDR ramp times with instant, evidence-grounded AI outreach that handles replies and books qualified meetings.
+          Replace 4-month SDR ramp times with instant, evidence-grounded AI
+          outreach that handles replies and books qualified meetings.
         </motion.p>
 
         <motion.div
@@ -59,41 +51,19 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.16 }}
           className="mx-auto max-w-xl"
         >
-          {!isSubmitted ? (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row items-center gap-2.5"
-            >
-              <Input
-                type="email"
-                required
-                placeholder="Enter your work email..."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="h-12 w-full rounded-xl border-hairline bg-surface-card px-4 text-[15px] text-ink placeholder:text-ink-tertiary shadow-2xs focus-visible:border-ai-orange focus-visible:ring-1 focus-visible:ring-ai-orange"
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="h-12 w-full sm:w-auto shrink-0 cursor-pointer rounded-xl border border-ink bg-ink px-7 text-[15px] font-semibold text-white shadow-sm transition-all hover:bg-ink/90 hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <Sparkles className="mr-2 h-4 w-4 text-ai-orange" />
-                <span>Reserve Spot</span>
-                <ArrowRight className="ml-2 h-4 w-4 opacity-80" />
-              </Button>
-            </form>
-          ) : (
-            <div className="rounded-xl border border-semantic-success/30 bg-semantic-success/10 p-4 text-center shadow-xs animate-in fade-in-50">
-              <div className="flex items-center justify-center gap-2 text-sm font-semibold text-semantic-success">
-                <Check className="h-4 w-4" /> You're on the priority waitlist!
-              </div>
-              <p className="text-xs text-ink-muted mt-1">
-                Reserved for <strong>{email}</strong>. We're rolling out access in batches.
-              </p>
-            </div>
-          )}
+          <Button
+            asChild
+            size="lg"
+            className="h-13 cursor-pointer rounded-xl border border-ink bg-ink px-8 text-[16px] font-semibold text-white shadow-sm transition-all hover:bg-ink/90 hover:-translate-y-0.5 active:translate-y-0"
+          >
+            <Link to="/demo" className="flex items-center gap-2.5">
+              <Sparkles className="h-4.5 w-4.5 text-ai-orange" />
+              <span>Book a Demo</span>
+              <ArrowRight className="h-4.5 w-4.5 opacity-80" />
+            </Link>
+          </Button>
 
-          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-[11px] sm:text-[12px] font-mono text-ink-subtle">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-[11px] sm:text-[12px] font-mono text-ink-subtle">
             <span className="flex items-center gap-1">
               <Check className="h-3.5 w-3.5 text-semantic-success" />
               $38 per qualified meeting

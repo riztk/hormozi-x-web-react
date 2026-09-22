@@ -17,9 +17,9 @@ interface TrustCard {
 const TRUST_CARDS: TrustCard[] = [
   {
     icon: ShieldCheck,
-    title: "Tenant Isolation",
+    title: "Customer Data Isolation",
     description:
-      "Per-tenant encryption keys and row-level tenant enforcement. No cross-tenant data leakage.",
+      "Dedicated encryption keys and strict multi-tenant isolation. Zero cross-account data leakage.",
   },
   {
     icon: FileSearch,
@@ -31,19 +31,19 @@ const TRUST_CARDS: TrustCard[] = [
     icon: UserCheck,
     title: "RBAC & SCIM",
     description:
-      "Enterprise role-based access control and SCIM provisioning. Set strict limits at the tenant and sender level.",
+      "Enterprise role-based access control and SCIM provisioning. Set granular limits across teams and senders.",
   },
   {
     icon: Gauge,
     title: "99.9% Uptime SLA",
     description:
-      "High availability enterprise infrastructure with an RPO of 5 minutes and RTO of 4 hours.",
+      "High-availability enterprise cloud infrastructure with continuous failover and redundant backup systems.",
   },
   {
     icon: Lock,
     title: "VPC-Deployable",
     description:
-      "Available as a dedicated tenant or single-tenant VPC deployment for strict data residency requirements.",
+      "Available as dedicated cloud instances or single-tenant VPC deployments for strict data residency compliance.",
   },
   {
     icon: ShieldCheck,

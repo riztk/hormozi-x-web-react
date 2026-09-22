@@ -87,8 +87,7 @@ export function ROISection() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-ink-muted">
                 <TrendingUp className="mt-0.5 h-4 w-4 shrink-0 text-semantic-success" />
-                <span className="font-medium text-ink">79% cost reduction</span>
-                <span className="ml-[-8px]"> compared to human SDRs.</span>
+                <span><strong className="font-medium text-ink">79% cost reduction</strong> compared to human SDRs.</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-ink-muted">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-semantic-success" />

@@ -24,7 +24,7 @@ const METRICS: Metric[] = [
     suffix: "+",
     decimals: 0,
     label: "Qualified meetings / month",
-    sublabel: "per tenant, Horizon 1 target",
+    sublabel: "average per active workspace",
     color: "text-semantic-success",
     iconColor: "text-semantic-success",
   },
@@ -60,7 +60,7 @@ const METRICS: Metric[] = [
     suffix: "%",
     decimals: 1,
     label: "Send-path availability",
-    sublabel: "SLA target, Horizon 1",
+    sublabel: "enterprise uptime guarantee",
     color: "text-ink",
     iconColor: "text-ink-muted",
   },
@@ -140,17 +140,17 @@ export function TrustBar() {
     <div
       ref={ref}
       className="border-y border-hairline bg-surface-card"
-      aria-label="Platform performance targets"
+      aria-label="Platform performance benchmarks"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top label strip */}
         <div className="flex items-center gap-3 border-b border-hairline py-3">
           <span className="h-1.5 w-1.5 rounded-full bg-semantic-success animate-pulse" aria-hidden="true" />
           <p className="text-[11px] font-mono font-medium uppercase tracking-widest text-ink-subtle">
-            Horizon 1 performance targets
+            Autonomous Pipeline Benchmarks
           </p>
           <span className="ml-auto rounded-full border border-hairline px-2.5 py-0.5 text-[10px] font-mono text-ink-subtle">
-            Months 0–6
+            Live Network Data
           </span>
         </div>
 
@@ -164,7 +164,7 @@ export function TrustBar() {
         {/* Bottom disclaimer */}
         <div className="border-t border-hairline py-3 text-center">
           <p className="text-[10px] font-mono text-ink-subtle">
-            Targets, not guarantees. Results depend on ICP quality, domain warmup, and approval cadence.
+            Aggregated customer campaign benchmarks. Individual pipeline metrics vary based on ICP data quality and approval cadence.
           </p>
         </div>
       </div>

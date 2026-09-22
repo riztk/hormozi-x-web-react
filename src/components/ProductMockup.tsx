@@ -85,12 +85,6 @@ export function ProductMockup() {
                 Autonomous SDR
               </span>
             </div>
-            <div className="flex items-center gap-2 rounded-full border border-semantic-success/30 bg-semantic-success/8 px-3 py-1">
-              <span className="h-2 w-2 rounded-full bg-semantic-success animate-pulse" />
-              <span className="font-mono text-[11px] font-semibold text-semantic-success">
-                RUNNING
-              </span>
-            </div>
           </div>
 
           <div className="grid lg:grid-cols-[200px_1fr]">

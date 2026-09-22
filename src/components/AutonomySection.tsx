@@ -75,7 +75,7 @@ const REPLY_ROUTES: ReplyRoute[] = [
   { icon: MessageCircle, reply: "Interested", action: "Continue conversation", isEscalation: false },
   { icon: HelpCircle, reply: "Question", action: "Answer from knowledge base", isEscalation: false },
   { icon: Clock, reply: "Out of office", action: "Reschedule automatically", isEscalation: false },
-  { icon: XCircle, reply: "Opt-out", action: "Tenant-wide suppression cascade", isEscalation: false },
+  { icon: XCircle, reply: "Opt-out", action: "Instant workspace-wide suppression", isEscalation: false },
   { icon: AlertTriangle, reply: "Pricing mentioned", action: "Human takeover", isEscalation: true },
 ];
 
